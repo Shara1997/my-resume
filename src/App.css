@@ -1,38 +1,134 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #c0c0c0;
+  width: 60vw;
+  margin: 20px auto;
+  box-shadow: rgba(16, 16, 16, 0.2) 0px 7px 29px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume-container {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading-component {
+  margin-bottom: 10px;
+}
+.name {
+  margin-top: 8px ;
+  margin-bottom: 6px ;
+  font-size: 45px;
+  
+}
+.line-divider {
+  border: 1px solid rgb(108, 107, 107);
+  width: 100%;
+  height: 0.2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.job-title {
+  margin: 8px;
+}
+
+.body-component {
+  text-align: left;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  justify-content: center;
+  margin: -0.5rem 0 0.5rem ;
+}
+
+.leftside-container, .rightside-container {
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+}
+
+.leftside-container {
+  background-color: #dadada3a;
+  padding-left: 10px;
+  margin-left: 0.2rem;
+  width: 15rem;
+  
+}
+
+.rightside-container {
+ width: 20rem;
+}
+
+.section-heading {
+  font-size: 22px;
+}
+
+.leftside-line, .rightside-line {
+  border: 1px solid #a7a7a7;
+  height: 0.1px;
+  margin-bottom: 0.5rem;
+}
+
+.leftside-line {
+  width: 90%;
+}
+
+.rightside-line {
+  width: 27.5rem;
+}
+
+.contact-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.icon {
+  margin-right: 0.2rem;
+  margin-bottom: -0.2rem;
+}
+
+.list {
+  margin-left: 1rem;
+  font-size: 18px;
+}
+
+.details {
+  width: 25rem;
+}
+
+.contact-mode a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.phone, .mail, .linkedin {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#work-date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#date {
+  font-size: 16px;
 }
